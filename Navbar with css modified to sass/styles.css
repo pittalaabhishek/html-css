@@ -1,0 +1,54 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+  font-size: 20px;
+  color: #f4f4f4;
+  font-weight: bold;
+}
+.navbar .nav-list {
+  display: flex;
+  gap: 15px;
+}
+.navbar .nav-list a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar .nav-list a:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+main {
+  text-align: left;
+  font-family: "Arial", sans-serif;
+}
+main section {
+  padding: 40px;
+  border-bottom: 1px solid #ddd;
+  height: 400px;
+}
+main section:nth-child(even) {
+  background-color: #f4f4f4;
+}
+main section.about, main section.features, main section.contact {
+  padding-top: 5px;
+}/*# sourceMappingURL=styles.css.map */

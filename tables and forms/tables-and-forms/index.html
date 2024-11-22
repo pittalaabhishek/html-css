@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Schedule</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Event</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="schedule-heading">
+            <h2 id="schedule-heading">Event Schedule</h2>
+            <table aria-label="Event Schedule">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 AM</td>
+                        <td>Keynote Speech</td>
+                        <td>Auditorium</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM</td>
+                        <td>Workshop 1: Web Development</td>
+                        <td>Room 101</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 PM</td>
+                        <td>Panel Discussion</td>
+                        <td>Conference Hall</td>
+                    </tr>
+                </body>
+            </table>
+        </section>
+
+        <section aria-labelledby="registration-heading">
+            <h2>Register for the Event</h2>
+            <form action="/submit-registration" method="post" aria-labelledby="registration-form-heading">
+                    <legend>Registration Form</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required aria-required="true" aria-label="Enter your name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required aria-required="true" aria-label="Enter your email"><br><br>
+
+                    <label for="workshop">Select a Workshop:</label><br>
+                    <select id="workshop" name="workshop" aria-label="Select a workshop">
+                        <option value="web-development">Web Development</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="data-analysis">Data Analysis</option>
+                    </select><br><br>
+
+                    <button type="submit" aria-label="Submit the registration form">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Organization. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

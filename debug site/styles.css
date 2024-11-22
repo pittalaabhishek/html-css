@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: blue;
+}
+
+#main-title {
+    color: red;
+}
+
+.text {
+    color: green;
+    font-size: 16px;
+}
+
+.special-text {
+    font-size: 18px;
+    color: purple;
+}
+
+#first-paragraph {
+    color: orange;
+}
+
+.section .text {
+    color: black;
+}
